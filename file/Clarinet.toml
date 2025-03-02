@@ -1,0 +1,14 @@
+[project]
+name = "stacks-inheritance"
+description = "A smart contract-based will execution system on Stacks blockchain"
+authors = ["Your Name <your.email@example.com>"]
+telemetry = false
+requirements = []
+
+[contracts.inheritance]
+path = "contracts/inheritance.clar"
+depends_on = ["access-control"]
+
+[contracts.access-control]
+path = "contracts/access-control.clar"
+depends_on = []
