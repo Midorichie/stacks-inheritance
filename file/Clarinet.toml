@@ -5,10 +5,14 @@ authors = ["Your Name <your.email@example.com>"]
 telemetry = false
 requirements = []
 
-[contracts.inheritance]
-path = "contracts/inheritance.clar"
-depends_on = ["access-control"]
-
 [contracts.access-control]
 path = "contracts/access-control.clar"
 depends_on = []
+
+[contracts.time-verification]
+path = "contracts/time-verification.clar"
+depends_on = []
+
+[contracts.inheritance]
+path = "contracts/inheritance.clar"
+depends_on = ["access-control", "time-verification"]
